@@ -8,6 +8,7 @@ use App\Models\Student;
 use App\Models\Subject;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Validation\Rule;
+use Illuminate\Support\Facades\Auth;
 
 class AdminController extends Controller
 {
@@ -127,5 +128,13 @@ class AdminController extends Controller
         $student = Student::findOrFail($id);
         $student->delete();
         return redirect()->back()->with('success', 'successfully deleted a student');
+    }
+    public function logout(Request $request) {
+        Auth::logout();
+        $request->session()->invalidate();
+        $request->session()->regenerateToken();
+        return redirect('/login')->with('success','Successfully logout');
+
+
     }
 }

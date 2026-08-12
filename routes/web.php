@@ -65,4 +65,5 @@ Route::middleware(['auth:admin'])->prefix('admin')->group(function () {
     Route::post('/marks/add', [MarkController::class, 'addMarks'])->name('marks.add');
     Route::put('/marks/update/{id}', [MarkController::class, 'editMarks'])->name('marks.update');
     Route::delete('/marks/delete/{id}', [MarkController::class, 'deleteMarks'])->name('marks.delete');
+    Route::post('/logout',[AdminController::class,'logout'])->name('admin.logout');
 });

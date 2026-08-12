@@ -37,6 +37,13 @@
                   <li class="nav-item  mb-1">
                       <a class="nav-link {{request()->routeIs('admin.marks*') ? 'active' : '' }}" href="{{url('/admin/marks')}}">Marks & Results</a>
                   </li>
+                  <li class="nav-item mb-1">
+                    <form action="{{ route('admin.logout') }}" method="post">
+                        @csrf 
+                        @method('POST')
+                        <button type="submit" class="nav-link">Logout</button>
+                    </form>
+                  </li>
               </ul>
           </div>
       </div>
