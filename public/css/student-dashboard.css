@@ -1,0 +1,116 @@
+body {
+    font-family: Inter;
+    background-color: #eef4ff;
+}
+
+header {
+    background-color: rgb(6, 6, 68);
+    color: #eef4ff;
+    display: flex;
+    justify-content: space-around;
+    height: 70px;
+}
+
+.logout-btn {
+    display: flex;
+    background-color: #eef4ff;
+    color: rgb(6, 6, 68);
+    padding-left: 15px;
+    padding-right: 15px;
+    border: none;
+    border-radius: 3px;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+}
+
+.logout-link {
+    text-decoration: none;
+    color: rgb(6, 6, 68);
+}
+
+.title {
+    display: flex;
+    align-items: center;
+}
+
+.action-btn-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container {
+    margin-top: 80px;
+}
+
+@media(max-width:760px) {
+    .title {
+        display: flex;
+        align-items: center;
+        font-size: small;
+    }
+
+    .logout-btn {
+        display: flex;
+        background-color: #eef4ff;
+        color: rgb(6, 6, 68);
+        padding-left: 15px;
+        padding-right: 15px;
+        border: none;
+        border-radius: 5px;
+        align-items: center;
+        height: min-content;
+        margin-top: 15px;
+        font-size: small;
+
+    }
+
+}
+
+.btn-exam-result {
+    background-color: #0052cc;
+    color: #ffffff;
+    border: none;
+    transition: background-color 0.2s ease;
+}
+
+.btn-exam-result:hover {
+    background-color: #0043a4;
+    color: #ffffff;
+
+}
+
+.btn-marks-certificate {
+    background-color: transparent;
+    color: rgb(6, 6, 68);
+    border: 2px solid rgb(6, 6, 68);
+    transition: all 0.2s ease;
+}
+
+.btn-marks-certificate:hover {
+    background-color: rgb(6, 6, 68);
+    color: #ffffff;
+
+}
+
+footer {
+    background-color: rgb(6, 6, 68);
+    height: 70px;
+
+
+}
+
+.footer-content {
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    margin-top: 2px;
+
+}
+
+.footer-link {
+    text-decoration: none;
+
+
+}

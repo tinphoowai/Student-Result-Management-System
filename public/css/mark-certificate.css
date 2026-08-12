@@ -1,0 +1,76 @@
+ body {
+     background-color: #f1f3f6;
+     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+ }
+
+ header {
+     background-color: rgb(6, 6, 68);
+     color: #eef4ff;
+     display: flex;
+     justify-content: space-between;
+     height: 70px;
+ }
+
+ .title {
+     display: flex;
+     align-items: center;
+     margin-left: 30px;
+     color: #eef4ff;
+ }
+
+ .back-btn {
+     display: flex;
+     margin-left: auto;
+     margin-right: 15px;
+     background-color: #eef4ff;
+     color: rgb(6, 6, 68);
+     padding-left: 15px;
+     padding-right: 15px;
+     border: none;
+     border-radius: 3px;
+     align-items: center;
+     margin-top: 15px;
+     margin-bottom: 15px;
+
+ }
+
+ .a4-certificate-card {
+     background-color: #ffffff;
+     max-width: 800px;
+     margin: 40px auto;
+     padding: 50px;
+     border-radius: 4px;
+     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+     min-height: 1000px;
+
+ }
+
+ .certificate-title {
+     color: rgb(6, 6, 68);
+     font-weight: 700;
+     letter-spacing: 1px;
+ }
+
+ @media print {
+     @page {
+         margin: 0;
+     }
+
+     body {
+         background-color: #ffffff;
+
+     }
+
+     header,
+     .no-print {
+         display: none !important;
+
+     }
+
+     .a4-certificate-card {
+         box-shadow: none !important;
+         margin: 0 !important;
+         padding: 20px !important;
+         max-width: 100% !important;
+     }
+ }

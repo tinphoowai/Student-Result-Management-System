@@ -1,0 +1,39 @@
+body {
+    font-family: Inter;
+    background-color: #eef4ff;
+}
+
+.form-title {
+    color: rgb(6, 6, 68);
+    text-align: center;
+    margin-top: 20px;
+}
+
+.label {
+    color: rgb(6, 6, 68);
+}
+
+.sec-label {
+    margin-top: 10px;
+    color: rgb(6, 6, 68);
+}
+
+.login-span {
+    margin-top: 30px;
+}
+
+.register-btn {
+    background-color: rgb(6, 6, 68);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    transition: 0.3s opacity;
+}
+
+button:hover {
+    opacity: 0.9;
+}
